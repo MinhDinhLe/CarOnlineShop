@@ -1,0 +1,383 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.Header {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    border-bottom: 3px solid #ed7f1e;
+}
+.Header .logo-name {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.Header .logo-name .logo {
+    
+    width: 150px;
+    height: 70px;
+}
+.Header .logo-name .Name-Company {
+    margin-left: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:larger;
+    color: #ed7f1e;
+    margin-right: 2px;
+}
+.Header .Navigation {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+.Header .Navigation a:hover{
+    color: #ed7f1e;
+}
+.Header .Navigation .Navigation-item {
+    margin-left: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    color: #123;
+}
+.Header .Navigation .Navigation-item:last-child {
+    margin-right: 30px;
+}
+
+.Header .logo-name .Name-Company1 {
+    
+    color: rgb(22, 154, 68);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:larger;
+}
+#content {
+    background-image: url(/src/main/webapp/image/nen.png);
+    background-size: cover;
+    background-position: center;
+}
+/* ------------------ End Header Form ------------------*/
+
+
+/* ------------------ Side bar left Form ------------------*/
+#left {
+    width: 250px;
+    height: 100%;
+    border-right: 3px solid #ed7f1e;
+    float: left;
+    background-color: rgb(242, 242, 242);
+}
+
+#left table {
+    width: 100%;
+    height: 15%;
+    border-collapse: collapse;
+}
+.home-item, .shop-item, .contact-item {
+    border-bottom: 1px solid #ccc;
+}
+.Navigation-item, .menu-link {
+    text-decoration: none;
+    color: #000;
+}
+#left td {
+    padding: -5px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.home-container, .shop-container, .contact-container {
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+}
+.home-item:hover, .shop-item:hover, .contact-item:hover {
+    background-color: #ebebeb;
+}
+
+.logoHome {
+    width: 100px;
+    height: 65px;
+}
+
+.menu-text {
+    font-size: 20px;
+    font-weight: bold;
+}
+/* ------------------ End Side bar Left Form ------------------*/
+
+
+/*------------------ Main content Form ------------------*/
+#content {
+    margin-top: 50px;
+    margin-left: 300px;
+    height:calc(100% - 70px);
+}
+
+
+/* Cart form */
+#content .PayOrShop .Pay {
+    margin-right: 10px;
+    float: right;
+    font-size: 20px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#content .PayOrShop .Pay:hover {
+    background-color: #ed7f1e;
+    border-radius: 20px;
+}
+
+#content .PayOrShop .Shop {
+    margin-right: 10px;
+    float: right;
+    font-size: 20px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#content .PayOrShop .Shop:hover {
+    background-color: #ed7f1e;
+    border-radius: 20px;
+}
+/* End Cart Form */
+
+
+/* Payment form */
+#content .Payment_pay label {
+    display: inline-block;
+    width: 9em;
+    margin-bottom: 1em;
+}
+#content .Payment_pay input[type="text"], input[type="email"], input[type="tel"] {
+    display: inline-block;
+    width: 15em;
+    margin-left: 0.5em;
+    margin-bottom: 0.5em;
+}
+#content .Payment_pay .info-box {
+    border: 1px solid #ccc;
+    padding: 20px;
+    background-color: #f9f9f9;
+    width: 400px;
+    margin-left: 150px;
+}
+#content .Payment_pay .confirm {
+    margin-right: 10px;
+    font-size: 20px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#content .Payment_pay .confirm:hover {
+    background-color: #ed7f1e;
+}
+/* End Payment form */
+
+
+/* Login form */
+#content .input-field {
+    color: rgba(0, 0, 0, 0.5); /* Màu chữ mờ */
+    font-weight: bold; /* Chữ đậm khi nhập */
+}
+/* End login form */
+/* ------------------End Main Content Form ------------------*/
+
+
+/* ------------------ footer ------------------ */
+#footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    background-color: #f2f2f2;
+    padding-bottom: 15px;
+    text-align: center;
+    border-top: 3px solid #ed7f1e;
+}
+/*------------------ End footer ------------------*/
+/* CSS cho khung popup */
+.login-popup {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.login-content {
+  background-color: #fff;
+  margin: 10% auto;
+  padding: 20px;
+  width: 300px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.signin-popup {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.sign-content {
+  background-color: #fff;
+  margin: 10% auto;
+  padding: 20px;
+  width: 300px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.sign-content table {
+  width: 100%;
+}
+
+.sign-content table td {
+  padding: 5px;
+}
+
+.sign-row h1 {
+  text-align: center;
+  font-weight: bold;
+  color: #4CAF50;
+}
+
+.sign-content input[type="text"],
+
+.sign-content input[type="password"],
+.sign-content input[type="email"]
+ {
+  width: 94%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+.sign-content select {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+.sign-content input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.sign-content button {
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: #ccc;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.sign-row {
+  position: relative;
+}
+
+.sign-row .close-button {
+  position: absolute;
+  top: -36px;
+  right: -15px;
+  margin: 5px;
+  font-size: 20px;
+  color: red;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.login-content table {
+  width: 100%;
+}
+
+.login-content table td {
+  padding: 5px;
+}
+.login-row h1 {
+	text-align: center; /* Căn giữa theo chiều ngang */
+	font-weight: bold;
+    color:#4CAF50;
+}	
+.login-content input[type="text"],
+.login-content input[type="password"] {
+  width: 94%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.login-content input[type="submit"],
+.login-content .btn_SingUp {
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+	
+.login-row {
+    position: relative;
+}
+
+.login-row .close-button {
+    position: absolute;
+    top: -36px;
+    right: -15px;
+    margin: 5px;
+    font-size: 20px;
+    color: red;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+/*SUA TRANG CATALOG*/
+#left  h6 {
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #333;
+  margin: 0;
+  padding: 5px 0;
+  border-bottom: 1px solid #ccc;
+}
